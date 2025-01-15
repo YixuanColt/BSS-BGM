@@ -1,0 +1,26 @@
+dataset:
+  name: NYCCitiBike
+  description: NYC Citi Bike station-based demand prediction
+  paths:
+    data: ./data/NYCCitiBike/
+    train: ./data/NYCCitiBike/train.csv
+    test: ./data/NYCCitiBike/test.csv
+  features:
+    - station_id
+    - timestamp
+    - bike_count
+    - weather_temperature
+    - weather_humidity
+    - holiday_flag
+    - distance_to_nearest_station
+  target:
+    - bike_demand
+  preprocessing:
+    normalize: true
+    fillna: "zero"
+  temporal:
+    time_steps: 12
+    time_unit: "30min"
+  split:
+    train_ratio: 0.7
+    test_ratio: 0.3
