@@ -1,2 +1,2 @@
 Anonymous Project
-ST-SSL: Spatio-Temporal Self-Supervised Learning for Traffic Prediction
+BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling
