@@ -52,28 +52,15 @@ class FeatureFusion(nn.Module):
                                   (num_new_nodes x time_steps x input_dim).
         :return: Fused features for new nodes (num_new_nodes x input_dim).
         """
-        # Step 1: Transform intrinsic and transferred features
         intrinsic_transformed = self.intrinsic_fc(intrinsic_features)  # (num_new_nodes x input_dim)
         transferred_transformed = self.transferred_fc(transferred_features)  # (num_new_nodes x input_dim)
-
-        # Step 2: Fuse temporal features across time steps
         fused_temporal = self.fuse_temporal_features(temporal_features)  # (num_new_nodes x input_dim)
-
-        # Step 3: Concatenate features across time steps
         combined_features = torch.cat(
             [intrinsic_transformed, transferred_transformed, fused_temporal], dim=-1
         )  # (num_new_nodes x input_dim * 3)
-
-        # Step 4: Compute gating values
         gating_values = self.gate(combined_features)  # (num_new_nodes x input_dim)
-
-        # Step 5: Apply gating mechanism to fuse intrinsic and transferred features
         gated_fusion = gating_values * intrinsic_transformed + (1 - gating_values) * transferred_transformed
-
-        # Step 6: Add fused temporal features
         fused_features = gated_fusion + fused_temporal
-
-        # Step 7: Apply final transformation
         output_features = self.output_fc(fused_features)  # (num_new_nodes x input_dim)
 
         return output_features
