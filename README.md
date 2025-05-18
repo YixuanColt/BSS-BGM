@@ -37,44 +37,6 @@ Extensive experiments on **NYC Citi-Bike** and **Chicago Divvy-Bike** datasets s
 
 > ✅ BGM achieves **up to 17.7% lower RMSE** compared to previous state-of-the-art models.
 
----
-
-### 📂 Code Structure
-
-```
-BGM/
-├── data/                # Processed Citi-Bike and Divvy-Bike datasets
-├── models/              # Model definitions (Graph Encoder, Mapping, Fusion)
-├── utils/               # Preprocessing, metrics, and helpers
-├── results/             # Experimental results and logs
-└── main.py              # Entry point
-```
-
----
-
-### 🚀 Getting Started
-
-#### Prerequisites
-- Python 3.8+
-- PyTorch >= 1.11
-- NetworkX, NumPy, Pandas, SciPy
-
-#### Setup
-```bash
-git clone https://github.com/YixuanColt/BGM.git
-cd BGM
-pip install -r requirements.txt
-```
-
-#### Run Training
-```bash
-python main.py --city NYC --mode train
-```
-
-#### Evaluate Model
-```bash
-python main.py --city NYC --mode test
-```
 
 ---
 
