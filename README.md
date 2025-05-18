@@ -1,11 +1,8 @@
 
 # BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling
 
-[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)  
 Official implementation of our IJCAI 2025 paper:  
 **BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling**  
-Yixuan Zhao, Hongkai Wen, Xingchen Zhang, Man Luo  
-[[PDF (Camera Ready)]](./IJCAI_2025_camera_ready_Yixuan_Zhao_.pdf)
 
 ---
 
@@ -13,6 +10,8 @@ Yixuan Zhao, Hongkai Wen, Xingchen Zhang, Man Luo
 
 The **BGM** framework addresses the key challenge of predicting bike-sharing demand at **newly deployed stations**, where historical data is unavailable.  
 To ensure **equitable mobility access** and **efficient operations** in expanding urban systems, BGM captures **dynamic inter-station relationships** via spatio-temporal graph modeling and enhances prediction accuracy through **embedding transfer** and **feature fusion**.
+![Framework Overview](Framework.png)
+
 
 ---
 
@@ -93,26 +92,8 @@ We integrate the following public datasets:
 
 All datasets are available via public APIs or open portals. See `data/README.md` for processing instructions.
 
----
-
-### 📌 Citation
-
-If you find our work helpful, please cite:
-
-```bibtex
-@inproceedings{zhao2025bgm,
-  title={BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling},
-  author={Zhao, Yixuan and Wen, Hongkai and Zhang, Xingchen and Luo, Man},
-  booktitle={Proceedings of the 34th International Joint Conference on Artificial Intelligence (IJCAI)},
-  year={2025}
-}
-```
-
----
-
 ### 📬 Contact
 
 If you have any questions, feel free to reach out:
 
 - Yixuan Zhao: [yz776@exeter.ac.uk](mailto:yz776@exeter.ac.uk)  
-- Man Luo (Corresponding Author): [m.luo@exeter.ac.uk](mailto:m.luo@exeter.ac.uk)
