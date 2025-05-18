@@ -10,6 +10,7 @@ Official implementation of our IJCAI 2025 paper:
 
 The **BGM** framework addresses the key challenge of predicting bike-sharing demand at **newly deployed stations**, where historical data is unavailable.  
 To ensure **equitable mobility access** and **efficient operations** in expanding urban systems, BGM captures **dynamic inter-station relationships** via spatio-temporal graph modeling and enhances prediction accuracy through **embedding transfer** and **feature fusion**.
+
 ![Framework Overview](Framework.png)
 
 
@@ -20,7 +21,6 @@ To ensure **equitable mobility access** and **efficient operations** in expandin
 - **Dynamic Graph Construction**: Models time-evolving spatial and temporal dependencies between existing and new stations.
 - **Knowledge Transfer Module**: Learns an orthogonal mapping from existing to new stations using spatial embedding similarities.
 - **Feature Fusion Mechanism**: Integrates transferred embeddings with intrinsic features using a gated vector.
-- **Spatio-Temporal Alignment**: Includes contrastive and temporal alignment losses to stabilize representation learning across time and stations.
 
 ---
 
@@ -46,7 +46,6 @@ Extensive experiments on **NYC Citi-Bike** and **Chicago Divvy-Bike** datasets s
 BGM/
 ├── data/                # Processed Citi-Bike and Divvy-Bike datasets
 ├── models/              # Model definitions (Graph Encoder, Mapping, Fusion)
-├── scripts/             # Training and evaluation scripts
 ├── utils/               # Preprocessing, metrics, and helpers
 ├── results/             # Experimental results and logs
 └── main.py              # Entry point
@@ -63,7 +62,7 @@ BGM/
 
 #### Setup
 ```bash
-git clone https://github.com/YourUsername/BGM.git
+git clone https://github.com/YixuanColt/BGM.git
 cd BGM
 pip install -r requirements.txt
 ```
