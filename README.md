@@ -8,8 +8,7 @@ Official acceptance of our IJCAI 2025 AI and Social Good paper:
 
 ### 🔍 Overview
 
-The **BGM** framework addresses the key challenge of predicting bike-sharing demand at **newly deployed stations**, where historical data is unavailable.  
-To ensure **equitable mobility access** and **efficient operations** in expanding urban systems, BGM captures **dynamic inter-station relationships** via spatio-temporal graph modeling and enhances prediction accuracy through **embedding transfer** and **feature fusion**.
+The **BGM** framework addresses the key challenge of predicting bike-sharing demand at **newly deployed stations**, where historical data is unavailable. To ensure **equitable mobility access** and **efficient operations** in expanding urban systems, BGM captures **dynamic inter-station relationships** via spatio-temporal graph modeling and enhances prediction accuracy through **embedding transfer** and **feature fusion**.
 
 ![Framework Overview](Framework.png)
 
