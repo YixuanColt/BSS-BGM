@@ -1,7 +1,7 @@
 
 # BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling
 
-Official implementation of our IJCAI 2025 AI and Social Good paper:  
+Official acceptance of our IJCAI 2025 AI and Social Good paper:  
 **BGM: Demand Prediction for Expanding Bike-Sharing Systems with Dynamic Graph Modeling**  
 
 ---
